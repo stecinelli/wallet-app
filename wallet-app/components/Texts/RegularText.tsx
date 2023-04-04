@@ -8,16 +8,16 @@ import { colors } from '../colors'
 import { TextProps } from './types'
 
 const StylesText = styled.Text`
-  font-size: 13px;
-  color: ${colors.gray};
+  font-size: 15px;
+  color: ${colors.white};
   text-align: left;
-  font-family: 'Lato-Regular';
+  font-family: 'Lato-Bold';
 `
 
-const SmallText: FunctionComponent<TextProps> = (props) => {
+const RegularText: FunctionComponent<TextProps> = (props) => {
   return (
     <StylesText style={props.textStyles}>{props.children}</StylesText>
   )
 }
 
-export default SmallText
+export default RegularText
