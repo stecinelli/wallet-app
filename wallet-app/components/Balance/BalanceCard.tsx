@@ -8,25 +8,14 @@ import SmallText from '../Texts/SmallText';
 
 // components
 import { colors } from '../colors';
-import { ScreenWidth } from '../shared';
-
-// navigation
-import { useNavigation } from '@react-navigation/native';
-import { Props as HomeProps } from '../../screens/Home';
 
 const CardBackground = styled.ImageBackground`
   height: 75%;
-  width: ${ScreenWidth * 0.67}px;
+  width: 100%;
   resize-mode: cover;
   background-color: ${colors.accent};
   border-radius: 25px;
-  margin-right: 25px;
   overflow: hidden;
-`;
-
-const CardTouchable = styled.TouchableHighlight`
-  height: 100%;
-  border-radius: 25px;
 `;
 
 const TouchableView = styled.View`
@@ -55,22 +44,16 @@ const Logo = styled.Image`
 import card_bg from '../../assets/bgs/background_transparent.png';
 
 // types
-import { CardProps } from './types'
+import { BalanceCardProps } from './types'
 
-const CardItem: FunctionComponent<CardProps> = (props) => {
-  const navigation = useNavigation<HomeProps['navigation']>();
-
-  const handlePress = () => {
-    navigation.navigate('Balance', {...props})
-  }
+const BalanceCard: FunctionComponent<BalanceCardProps> = (props) => {
 
   return (
     <CardBackground source={card_bg}>
-      <CardTouchable underlayColor={colors.secondary} onPress={handlePress}>
         <TouchableView>
           <CardRow>
             <RegularText textStyles={{ color: colors.white}}>
-             ****** {props.accountNo.slice(6, 10)}
+             ****** {props?.accountNo?.slice(6, 10)}
             </RegularText>
           </CardRow>
           <CardRow>
@@ -87,10 +70,9 @@ const CardItem: FunctionComponent<CardProps> = (props) => {
             <Logo source={props.logo}/>
           </CardRow>
         </TouchableView>
-      </CardTouchable>
 
     </CardBackground>
   )
 }
 
-export default CardItem
+export default BalanceCard

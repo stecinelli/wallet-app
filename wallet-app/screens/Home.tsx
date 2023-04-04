@@ -1,20 +1,20 @@
-import React, { FunctionComponent } from 'react'
-import { StatusBar } from 'expo-status-bar'
-import styled from 'styled-components/native'
+import React, { FunctionComponent } from 'react';
+import { StatusBar } from 'expo-status-bar';
+import styled from 'styled-components/native';
 
 // images
-import logo1 from '../assets/cards/mc.png'
-import logo2 from '../assets/cards/visa_white.png'
-import portrat1 from '../assets/portrat/1.png'
-import portrat2 from '../assets/portrat/2.png'
-import portrat3 from '../assets/portrat/3.png'
+import logo1 from '../assets/cards/mc.png';
+import logo2 from '../assets/cards/visa_white.png';
+import portrat1 from '../assets/portraits/1.jpg';
+import portrat2 from '../assets/portraits/2.jpg';
+import portrat3 from '../assets/portraits/3.jpg';
 
 // custom components
-import { Container } from '../components/shared'
+import { Container } from '../components/shared';
 import { colors } from '../components/colors';
-import CardSection from '../components/Cards/CardSection'
-import TransactionSection from '../components/Transactions/TransactionSection'
-import SendMoneySection from '../components/SendMoney/SendMoneySection'
+import CardSection from '../components/Cards/CardSection';
+import TransactionSection from '../components/Transactions/TransactionSection';
+import SendMoneySection from '../components/SendMoney/SendMoneySection';
 
 const HomeContainer = styled(Container)`
   flex: 1;
@@ -22,7 +22,12 @@ const HomeContainer = styled(Container)`
   width: 100%;
 `;
 
-const Home: FunctionComponent = () => {
+// types
+import { RootStackParamList } from '../navigators/RootStack';
+import { StackScreenProps } from '@react-navigation/stack';
+export type Props = StackScreenProps<RootStackParamList, 'Home'>;
+
+const Home: FunctionComponent<Props> = () => {
   const cardsData = [
     {
       id: 1,

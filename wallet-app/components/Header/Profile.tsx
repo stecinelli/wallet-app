@@ -1,6 +1,6 @@
-import React, { FunctionComponent } from 'react'
+import React, { FunctionComponent } from 'react';
 import { GestureResponderEvent, ImageSourcePropType, ImageStyle, StyleProp, ViewStyle } from 'react-native';
-import styled from 'styled-components/native'
+import styled from 'styled-components/native';
 
 const StyledView = styled.TouchableOpacity`
   flex-direction: column;

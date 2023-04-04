@@ -1,6 +1,6 @@
-import React, { FunctionComponent } from 'react'
-import styled from 'styled-components/native'
-import { StyleProp, TextStyle } from 'react-native'
+import React, { FunctionComponent } from 'react';
+import styled from 'styled-components/native';
+import { StyleProp, TextStyle } from 'react-native';
 
 // custom components
 import RegularText from '../Texts/RegularText';

@@ -1,5 +1,5 @@
-import React, { FunctionComponent } from 'react'
-import styled from 'styled-components/native'
+import React, { FunctionComponent } from 'react';
+import styled from 'styled-components/native';
 
 // components
 const CardList = styled.FlatList`
@@ -10,7 +10,7 @@ const CardList = styled.FlatList`
 `;
 
 // types
-import { CardSectionProps } from './types'
+import { CardSectionProps } from './types';
 import CardItem from './CardItem';
 
 const CardSection: FunctionComponent<CardSectionProps> = (props) => {

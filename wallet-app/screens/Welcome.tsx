@@ -1,14 +1,14 @@
-import React, { FunctionComponent} from 'react'
-import { StatusBar } from 'expo-status-bar'
-import styled from 'styled-components/native'
+import React, { FunctionComponent} from 'react';
+import { StatusBar } from 'expo-status-bar';
+import styled from 'styled-components/native';
 //Image
-import background from '../assets/bgs/background_v1.png'
+import background from '../assets/bgs/background_v1.png';
 // Custom Components
-import { colors } from '../components/colors'
-import { Container } from '../components/shared'
-import BigText from '../components/Texts/BigText'
-import SmallText from '../components/Texts/SmallText'
-import RegularButton from '../components/Buttons/RegularButton'
+import { colors } from '../components/colors';
+import { Container } from '../components/shared';
+import BigText from '../components/Texts/BigText';
+import SmallText from '../components/Texts/SmallText';
+import RegularButton from '../components/Buttons/RegularButton';
 
 const WelcomeContainer = styled(Container)`
   background-color: ${colors.secondary};
@@ -36,7 +36,12 @@ const BottomSection = styled.View`
   justify-content: flex-end;
 `;
 
-const Welcome: FunctionComponent = () => {
+// types
+import { RootStackParamList } from '../navigators/RootStack';
+import { StackScreenProps } from '@react-navigation/stack';
+type Props = StackScreenProps<RootStackParamList, 'Welcome'>;
+
+const Welcome: FunctionComponent<Props> = ({ navigation }) => {
   return (
     <>
       <StatusBar style="light" />
@@ -51,7 +56,7 @@ const Welcome: FunctionComponent = () => {
           <SmallText textStyles={{ width: '70%', marginBottom: 25 }}>
             Best payment method, commects your money to your friends and family.
           </SmallText>
-          <RegularButton onPress={() => {}}>
+          <RegularButton onPress={() => { navigation.navigate('Home')}}>
             Get Started
           </RegularButton>
         </BottomSection>

@@ -1,9 +1,9 @@
-import React, { FunctionComponent, useRef } from 'react'
-import styled from 'styled-components/native'
-import BottomSheet from 'reanimated-bottom-sheet'
+import React, { FunctionComponent, useRef } from 'react';
+import styled from 'styled-components/native';
+import BottomSheet from 'reanimated-bottom-sheet';
 
 // custom components
-import { colors } from '../colors'
+import { colors } from '../colors';
 import RegularText from '../Texts/RegularText';
 import SmallText from '../Texts/SmallText';
 import SendMoneyItem from './SendMoneyItem';
@@ -32,7 +32,7 @@ const SendMoneyList = styled.FlatList`
 const TextButton = styled.TouchableOpacity``;
 
 // types
-import { SendMoneySectionProps } from './types'
+import { SendMoneySectionProps } from './types';
 
 
 const SendMoneySection: FunctionComponent<SendMoneySectionProps> = (props) => {

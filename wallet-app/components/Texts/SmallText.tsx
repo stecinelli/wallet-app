@@ -1,11 +1,11 @@
-import React, { FunctionComponent } from 'react'
-import styled from 'styled-components/native'
+import React, { FunctionComponent } from 'react';
+import styled from 'styled-components/native';
 
 //colors
-import { colors } from '../colors'
+import { colors } from '../colors';
 
 //types
-import { TextProps } from './types'
+import { TextProps } from './types';
 
 const StylesText = styled.Text`
   font-size: 13px;

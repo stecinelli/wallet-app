@@ -1,5 +1,5 @@
-import React, { FunctionComponent } from 'react'
-import styled from 'styled-components/native'
+import React, { FunctionComponent } from 'react';
+import styled from 'styled-components/native';
 
 // components
 import { ScreenWidth } from '../shared';
@@ -19,7 +19,7 @@ const SendMoneyItemContainer = styled.TouchableHighlight`
 
 
 //types
-import { SendMoneyProps } from './types'
+import { SendMoneyProps } from './types';
 
 const SendMoneyItem: FunctionComponent<SendMoneyProps> = (props) => {
   return (

@@ -1,9 +1,9 @@
-import React, { FunctionComponent } from 'react'
-import styled from 'styled-components/native'
+import React, { FunctionComponent } from 'react';
+import styled from 'styled-components/native';
 
 // compoments
-import { colors } from '../colors'
-import RegularText from '../Texts/RegularText'
+import { colors } from '../colors';
+import RegularText from '../Texts/RegularText';
 import { GestureResponderEvent, StyleProp, ViewStyle } from 'react-native';
 
 const ButtonView = styled.TouchableOpacity`
