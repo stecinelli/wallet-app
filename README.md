@@ -13,4 +13,4 @@ In this mobile app I used React Native with Expo and TypeScript.
 
 ## Setup
 - In this repo, go to 'wallet-app' folder and do a 'npm i' && 'npm start'.
-- Being an Expo app, you can scan the QR code to open the code in your Expo app or you can type W and see the web version.
+- Being an Expo app, you can scan the QR code to open the code in your Expo app.
