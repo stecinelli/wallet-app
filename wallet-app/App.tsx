@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useCallback, useEffect } from 'react';
 //custom fonts
 import AppLoading from 'expo-app-loading';
+import * as SplashScreen from 'expo-splash-screen';
 import { useFonts } from 'expo-font';
 import RootStack from './navigators/RootStack';
+
+SplashScreen.preventAutoHideAsync();
 
 export default function App() {
   let [fontsLoaded] = useFonts({
@@ -10,7 +13,17 @@ export default function App() {
     "Lato-Bold": require("./assets/fonts/Lato-Bold.ttf"),
   });
 
-  if(!fontsLoaded) return (<AppLoading />);
+  const onLayoutRootView = useCallback(async () => {
+    if (fontsLoaded) {
+      await SplashScreen.hideAsync();
+    }
+  }, [fontsLoaded]);
+
+  useEffect(() => {
+    onLayoutRootView()
+  }, [fontsLoaded]);
+
+  if(!fontsLoaded) return null;
 
   return (
     <RootStack />

@@ -9,7 +9,8 @@ import SmallText from '../Texts/SmallText';
 
 const AmountSectionBackground = styled.View`
   width: 100%;
-  padding-items: center;
+  padding-top: 5px;
+  align-items: center;
   flex: 1;
 `;
 
@@ -20,11 +21,11 @@ import { color } from 'react-native-reanimated';
 const AmountSection: FunctionComponent<AmountProps> = (props) => {
   return (
     <AmountSectionBackground>
-      <SmallText textStyles={{ color: colors.secondary, marginBottom: 15}}>
+      <SmallText textStyles={{ color: colors.secondary, marginBottom: 15, fontSize: 20 }}>
         Total Balance
       </SmallText>
       <RegularText textStyles={{ color: colors.secondary, fontSize: 28 }}>
-        {props.balance}
+       $ {props.balance}
       </RegularText>
     </AmountSectionBackground>
   )

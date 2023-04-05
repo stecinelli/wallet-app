@@ -6,6 +6,7 @@ import BalanceCard from './BalanceCard';
 
 const BalanceCardSectionBackground = styled.View`
   width: 100%;
+  high: 80%;
   align-items: center;
   flex: 2;
 `;

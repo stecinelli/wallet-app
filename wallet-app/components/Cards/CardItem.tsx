@@ -41,14 +41,13 @@ const CardRow = styled.View`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  resize-mode: contain;
-  flex: 1;
 `;
 
 const Logo = styled.Image`
   width: 100%;
   height: 80%;
-
+  resize-mode: contain;
+  flex: 1;
 `;
 
 // images

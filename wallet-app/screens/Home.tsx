@@ -16,10 +16,11 @@ import CardSection from '../components/Cards/CardSection';
 import TransactionSection from '../components/Transactions/TransactionSection';
 import SendMoneySection from '../components/SendMoney/SendMoneySection';
 
-const HomeContainer = styled(Container)`
-  flex: 1;
+const HomeContainer = styled(Container)`  
   background-color: ${colors.graylight};
   width: 100%;
+  height: 100%;
+  flex: 1;
 `;
 
 // types
@@ -40,21 +41,21 @@ const Home: FunctionComponent<Props> = () => {
       id: 2,
       accountNo: '1234560000',
       balance: 2000.90,
-      alias: 'Work Debit',
+      alias: 'Special Credit',
       logo: logo2,
     },
     {
       id: 3,
       accountNo: '1234007901',
       balance: 2000.50,
-      alias: 'Work Debit',
+      alias: 'Travel Card',
       logo: logo1,
     },
   ];
 
   const transactionData = [
     {
-      id: 1,
+      id: 4,
       title: 'Taxi',
       subTitle: 'Uber Car',
       amount: '-$86.00',
@@ -65,7 +66,7 @@ const Home: FunctionComponent<Props> = () => {
       },
     },
     {
-      id: 2,
+      id: 5,
       title: 'Shopping',
       subTitle: 'Ali express',
       amount: '-$290.00',
@@ -75,7 +76,7 @@ const Home: FunctionComponent<Props> = () => {
         background: `${colors.tertiary}`,
       },
     },   {
-      id: 1,
+      id: 6,
       title: 'Travel',
       subTitle: 'Emirates',
       amount: '-$586.00',
@@ -89,21 +90,21 @@ const Home: FunctionComponent<Props> = () => {
 
   const sendMoneyData = [
     {
-      id: 1,
+      id: 7,
       name: 'John Andoh',
       amount: 1000.40,
       background: `${colors.primary}`,
       img: portrat1,
     },
     {
-      id: 2,
+      id: 8,
       name: 'Harleen Scot',
       amount: 4400.70,
       background: `${colors.primary}`,
       img: portrat2,
     },
     {
-      id: 3,
+      id: 9,
       name: 'James Corbyn',
       amount: 6200.50,
       background: `${colors.primary}`,

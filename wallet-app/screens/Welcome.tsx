@@ -50,10 +50,10 @@ const Welcome: FunctionComponent<Props> = ({ navigation }) => {
           <TopImage source={background}/>
         </TopSection>
         <BottomSection>
-          <BigText textStyles={{ width: '70%', marginBottom: 25 }}>
+          <BigText textStyles={{ width: '70%', marginBottom: 25, fontSize: 50 }}>
             Best way to track your money
           </BigText>
-          <SmallText textStyles={{ width: '70%', marginBottom: 25 }}>
+          <SmallText textStyles={{ width: '90%', marginBottom: 25, fontSize: 18 }}>
             Best payment method, commects your money to your friends and family.
           </SmallText>
           <RegularButton onPress={() => { navigation.navigate('Home')}}>

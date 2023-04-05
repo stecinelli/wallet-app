@@ -15,8 +15,8 @@ const ButtonSectionBackground = styled.View`
 const ButtonSection: FunctionComponent = () => {
   return (
     <ButtonSectionBackground>
-      <RegularButton btnStyles={{ width: '50%'}} onPress={()=> {}} >
-        Cancel <Ionicons name="card" size={17} color={colors.white} />
+      <RegularButton btnStyles={{ width: '50%'}} onPress={()=> { alert('Cancel Card!') }} >
+        Cancel   <Ionicons name="card" size={17} color={colors.white} />
       </RegularButton>
     </ButtonSectionBackground>
   )

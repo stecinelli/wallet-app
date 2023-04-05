@@ -10,7 +10,7 @@ import SmallText from '../Texts/SmallText';
 import { colors } from '../colors';
 
 const CardBackground = styled.ImageBackground`
-  height: 75%;
+  height: 65%;
   width: 100%;
   resize-mode: cover;
   background-color: ${colors.accent};
@@ -31,13 +31,13 @@ const CardRow = styled.View`
   align-items: center;
   width: 100%;
   resize-mode: contain;
-  flex: 1;
 `;
 
 const Logo = styled.Image`
   width: 100%;
   height: 80%;
-
+  resize-mode: contain;
+  flex: 1;
 `;
 
 // images

@@ -71,7 +71,7 @@ const SendMoneySection: FunctionComponent<SendMoneySectionProps> = (props) => {
   return (
     <BottomSheet 
       ref={sheetRef}
-      snapPoints={[240, 85]}
+      snapPoints={[380, 200, 0]}
       borderRadius={25}
       initialSnap={1}
       enabledContentTapInteraction={false}
